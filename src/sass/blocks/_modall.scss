@@ -53,3 +53,59 @@
     top: -20px;
     cursor: pointer;
 }
+
+.notefication{
+    width: 450px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #c4c4c4;
+    transition: 0.6s ease-in;
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    color: $main-color;
+    z-index: 500;
+}
+
+.modall__projekts--one{
+    display: none;
+}
+
+.modall__projekts--two{
+    display: none;
+}
+
+
+.modall__projekts--three{
+    display: none;
+}
+
+.modall__projekts--dialog{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 750px;
+    height: 400px;
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 500;
+    background-color: #fff;
+    border-radius: 30px;
+
+    img{
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        width: 20px;
+        height: auto;
+        cursor: pointer;
+    }
+}

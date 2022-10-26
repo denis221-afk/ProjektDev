@@ -1,0 +1,208 @@
+@media (max-width: 1440px) {
+    .contact{
+       flex-direction: column;
+    }
+    
+    .form{
+        position: static;
+        transform: translate(0, 0);
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        
+
+    }
+    .form input {
+        max-width: 600px;
+    }
+    .form textarea{
+        max-width: 600px;
+    }
+    .contact__info{
+        width: 100%;
+    }
+   
+   }
+   @media (max-width: 1200px) {
+       .container {
+           max-width: 960px;
+       }
+      .search__location{
+        display: none;
+      }
+   
+      .inner{
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+      }
+      .inner__images{
+        margin-top: 30px;
+        img{
+            max-width: 450px;
+            
+        }
+      }
+
+      .Projekts__cards{
+        margin-top: 80px;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .Projekts__footer{
+        margin-top: 100px;
+        position: static;
+      }
+      .Projekts__footer{
+        display: none;
+      }
+      .Projekts{
+        height: auto;
+      }
+   }
+   
+   @media (max-width: 992px) {
+       .container {
+           max-width: 720px;
+       }
+   
+    .navbar{
+        display: none;
+    }
+    .navbar__responsive{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+    }
+    .Projekts__cards{
+        margin-top: 80px;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+      }
+
+    .Projekts__footer {
+        height: 100px;
+    }
+    .Footer__masenge{
+        display: none;
+    }
+    .Footer__title{
+        display: none;
+    }
+
+    .Expeirience .flex__wrap{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }   
+    .Expeirience__info{
+        padding-left: 0;
+    }
+
+    .product{
+        grid-template: repeat(3,280px) /repeat(2, 50%) ;
+        overflow:visible;
+    }
+
+    .long{
+        grid-column: unset;
+
+    }
+    .dable{
+        grid-column: unset;
+    }
+
+   }
+   
+   
+   @media (max-width: 768px) {
+       .container {
+           max-width: 540px;
+       }
+     
+       
+       .header .col-2{
+        display: none;
+       }
+       .header .col-1{
+        width: 100%;
+       }    
+       .product{
+        grid-template: repeat(3,280px) /repeat(1, 100%) ;
+        overflow:visible;
+    }
+    
+   }
+   
+   @media (max-width: 576px) {
+       .container{
+           max-width: none;
+       }
+
+       :root{
+        font-size: 12px;
+       }
+       .inner__info .title{
+        line-height: 35px;
+       }
+
+       .inner__images{
+        margin-right: 0;
+       }
+       .inner{
+        margin-top: 0;
+       }
+       .responsive__menu{
+        width: 100%;
+       }
+       .responsive__menu .menu__link{
+        font-size: 16px;
+       }
+
+       .Projekts__card{
+        max-width: 310px;
+
+        img{
+            max-width: 310px;
+        }
+       }
+
+       .slide{
+        max-width: 310px;
+       }
+
+       .contact__inner{
+        display: block;
+       }
+       .navbar__responsive{
+        width: 100%
+       }
+
+       .modall__dialog{
+            max-width: 300px;
+            height: auto;
+            form{
+                display: flex;
+                flex-direction: column;
+
+                input{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+       }
+       
+       .modall__projekts--dialog{
+        max-width: 300px;
+       }
+
+       .contact__descer{
+        padding-bottom: 20px;
+       }
+       .form {
+        margin-top: 30px;
+       }
+   }

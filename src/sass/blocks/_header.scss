@@ -166,6 +166,11 @@ nav{
 }
 
 .inner__images{
+    img{
+        max-width: 661px;
+        width: 100%;
+        height: auto;
+    }
     margin-right: 50px;
 }
 
@@ -223,4 +228,116 @@ nav{
     position: absolute;
     left: 20%;
     bottom: 30%;
+}
+
+.navbar__responsive{
+    display: none;
+    color: #fff;
+    font-size: 21px;
+    span{
+        width: 14px;
+        height: 2px;
+        background-color: #fff;
+        display: block;
+        margin: 4px 3px;
+    }
+    .burger__span{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.responsive__menu{
+    transition: 0.5s ease-in-out;
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -200%;
+    bottom: 0;
+    background: #fff;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+
+    .menu{
+        margin-left: 20px;
+    }
+    .menu__item{
+       margin: 10px 0;
+       list-style: none;
+
+       &:hover{
+        &::before{
+            background-color: $main-color;
+        }
+       }
+
+       &::before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 1px solid $main-color;
+        border-radius: 100%;
+        display: inline-block;
+        margin-top: 5px;
+        margin-right: 20px;
+       }
+    }
+    .menu__link{
+        font-size: 34px;
+        color: #000;
+    }
+
+    .nav__btn--resp{
+    border: none;
+    padding: 8px 36px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+
+    background-image: linear-gradient(#fff, #fff), linear-gradient($base-color, $base-color);
+  background-size: 0 5px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
+
+  &:hover{
+    background-size: 100% 3px, auto;
+  }
+
+
+    }
+    
+
+  .logo--resp{
+    color: $main-color;
+    font-size: 28px;
+  }
+}
+
+.fillter{
+    transition: 0.5s ease-in-out;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $main-color;
+    opacity: 0.5;
+    z-index: 50;
 }
